@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CodeKill</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <!-- 游戏界面 -->
+  <div class="game-container">
+    <h1>CodeKill</h1>
+    
+    <!-- 按钮触发显示表单 -->
+    <button class="button join-room-button" onclick="showForm('join-room-form')">加入房间</button>
+    <button class="button create-room-button" onclick="showForm('create-room-form')">创建房间</button>
+    <button class="switch-server-button" onclick="showForm('switch-server-form')">切换服务器</button>
+  </div>
+
+  <!-- 加入房间表单 -->
+  <div class="form" id="join-room-form">
+    <h2>加入房间</h2>
+    <input type="text" placeholder="请输入房间号">
+    <button class="button" onclick="joinRoom()">加入</button>
+    <button class="button" onclick="hideForm('join-room-form')">取消</button>
+  </div>
+
+  <!-- 创建房间表单 -->
+  <div class="form" id="create-room-form">
+    <h2>创建房间</h2>
+    <input type="text" placeholder="请输入房间号">
+    <button class="button" onclick="createRoom()">创建</button>
+    <button class="button" onclick="hideForm('create-room-form')">取消</button>
+  </div>
+
+  <!-- 切换服务器表单 -->
+  <div class="form" id="switch-server-form">
+    <h2>切换服务器</h2>
+    <input type="text" placeholder="请输入服务器地址">
+    <button class="button" onclick="hideForm('switch-server-form')">取消</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

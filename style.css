@@ -1,86 +1,52 @@
-/* 基本样式 */
+/* 样式 */
 body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-color: #333; /* 灰色背景 */
+  background-image: url('pic/background.jpg'); /* 背景图片路径 */
+  background-size: cover;
   color: white;
+  border-radius: 20px; /* 圆角半径，可以根据需要调整 */
 }
 
 /* 游戏容器 */
 .game-container {
-  position: relative;
-  width: 100%;
-  height: 100vh;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-/* 背景图片 */
-.background-image {
-  width: 100%;
-  height: auto;
-  opacity: 0; /* 初始时不可见 */
-  transition: opacity 1s;
-}
-
-/* 按钮容器 */
-.button-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  opacity: 0; /* 初始时不可见 */
-  transition: opacity 1s;
+  padding-top: 100px;
 }
 
 /* 按钮样式 */
-.button-container button {
-  background-color: #555; /* 灰色按钮 */
+.button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #007bff; /* 按钮背景颜色 */
   color: white;
   border: none;
-  padding: 10px 20px;
-  margin: 10px;
-  font-size: 16px;
   cursor: pointer;
-  transition: transform 1s;
+  border-radius: 20px;
+  margin: 5px;
 }
 
-/* 用户界面容器 */
-.user-interface {
+/* 切换服务器按钮样式 */
+.switch-server-button {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: none;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.8); /* 半透明黑色背景 */
+  bottom: 10px; /* 距离底部的距离 */
+  left: 10px; /* 距离左边的距离 */
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
 }
 
 /* 表单样式 */
-.user-interface h1 {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.user-interface input {
-  padding: 10px;
-  margin: 10px;
-  font-size: 16px;
-  border: 1px solid #555;
-  border-radius: 5px;
-}
-
-.user-interface button {
-  background-color: #555; /* 灰色按钮 */
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  margin: 10px;
-  font-size: 16px;
-  cursor: pointer;
+.form {
+  display: none;
+  background-color: #333; /* 表单背景颜色 */
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 300px;
+  border-radius: 20px;
 }
