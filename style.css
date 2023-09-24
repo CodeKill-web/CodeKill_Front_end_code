@@ -50,3 +50,10 @@ body {
   max-width: 300px;
   border-radius: 20px;
 }
+/* LOGO图片样式 */
+.logo {
+  width: 200px; /* 设置宽度为200px */
+  height: 200px; /* 设置高度为200px */
+  display: block; /* 将图片显示为块级元素 */
+  margin: 10px auto; /* 居中显示，可根据需要调整边距 */
+}
